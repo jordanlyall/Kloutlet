@@ -1,6 +1,6 @@
 <?php
 
-$DOMAIN = "cold-winter-3768.herokuapp.com";
+$DOMAIN = "klout-raplet.herokuapp.com";
 
 //Parameters in the request from Rapportive to our Raplet
 $callback = $_GET['callback'];
