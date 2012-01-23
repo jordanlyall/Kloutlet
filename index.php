@@ -13,8 +13,8 @@ if(isset($_GET['show']) && $_GET['show'] === 'metadata')
                 $parameters['name'] = "Kloutlet";
 		$parameters['description'] = "Klout + Rapportive = Kloutlet. View the sender's Klout score within Gmail.";
 		$parameters['welcome_text'] = "<p>View sender's Klout score. Visit Kloutlet.com for more info.</p>";
-		$parameters['icon_url'] = "http://kloutlet.com/images/klout-icon.png";
-		$parameters['preview_url'] = "http://kloutlet.com/images/preview.png";
+		$parameters['icon_url'] = "http://cold-winter-3768.herokuapp.com/images/klout-icon.png";
+		$parameters['preview_url'] = "http://cold-winter-3768.herokuapp.com/images/preview.png";
 		$parameters['provider_name'] = "Jordan Lyall";
 		$parameters['provider_url'] = "http://about.me/jordan/";
 		$parameters['data_provider_name'] = "Klout";
@@ -50,7 +50,7 @@ foreach ($jsonIterator as $key => $val) {
 $kscore = round($val);
 
            //Our response
-           $parameters['html'] = "<p><a href=\"http://klout.com/".htmlentities($twitter)."\"> <img style=\"padding-right:5px;\" src=\"https://kloutlet.com/images/kloutlet-sq.png\"> ".htmlentities($kscore)." | <span id=\"name\">@".htmlentities($twitter)." </span></a></p> ";
+           $parameters['html'] = "<p><a href=\"http://klout.com/".htmlentities($twitter)."\"> <img style=\"padding-right:5px;\" src=\"https://cold-winter-3768.herokuapp.com/images/kloutlet-sq.png\"> ".htmlentities($kscore)." | <span id=\"name\">@".htmlentities($twitter)." </span></a></p> ";
 
              }
              else
